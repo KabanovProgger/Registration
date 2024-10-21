@@ -21,17 +21,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Bm-1I-Sxd">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Bm-1I-Sxd">
                                 <rect key="frame" x="20" y="194" width="346" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8IZ-JZ-hFy">
-                                <rect key="frame" x="20" y="236" width="346" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-zH-g0N">
                                 <rect key="frame" x="20" y="278" width="346" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -49,17 +44,30 @@
                                     <action selector="signInButtonTapped:" destination="CdV-QZ-3Gn" eventType="touchUpInside" id="qe5-EH-w5h"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiQ-TL-N2M">
+                                <rect key="frame" x="20" y="236" width="346" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-zH-g0N">
+                                <rect key="frame" x="20" y="320" width="346" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Ng-92-HMs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OiQ-TL-N2M" firstAttribute="top" secondItem="3Bm-1I-Sxd" secondAttribute="bottom" constant="8" id="1x3-WL-YXg"/>
                             <constraint firstItem="3Bm-1I-Sxd" firstAttribute="top" secondItem="Xbq-K4-shn" secondAttribute="bottom" constant="8" id="5kP-dU-Dvh"/>
                             <constraint firstItem="Xbq-K4-shn" firstAttribute="top" secondItem="0Hr-nq-FL9" secondAttribute="bottom" constant="8" id="Adl-E1-FjX"/>
                             <constraint firstItem="0Hr-nq-FL9" firstAttribute="leading" secondItem="4Ng-92-HMs" secondAttribute="leading" constant="20" id="BGn-Gq-AQU"/>
-                            <constraint firstItem="8IZ-JZ-hFy" firstAttribute="top" secondItem="3Bm-1I-Sxd" secondAttribute="bottom" constant="8" id="FQf-No-Ob1"/>
+                            <constraint firstItem="OiQ-TL-N2M" firstAttribute="leading" secondItem="3Bm-1I-Sxd" secondAttribute="leading" id="CpF-KO-rx5"/>
+                            <constraint firstItem="8IZ-JZ-hFy" firstAttribute="top" secondItem="3Bm-1I-Sxd" secondAttribute="bottom" constant="50" id="FQf-No-Ob1"/>
                             <constraint firstItem="0Hr-nq-FL9" firstAttribute="leading" secondItem="Xbq-K4-shn" secondAttribute="leading" id="JpN-Ed-ucK"/>
                             <constraint firstItem="VbT-zH-g0N" firstAttribute="top" secondItem="8IZ-JZ-hFy" secondAttribute="bottom" constant="8" id="KQJ-Qt-6jA"/>
-                            <constraint firstItem="RJo-wB-YMA" firstAttribute="top" secondItem="VbT-zH-g0N" secondAttribute="bottom" constant="86" id="Ltb-Cz-Zo1"/>
+                            <constraint firstItem="OiQ-TL-N2M" firstAttribute="trailing" secondItem="3Bm-1I-Sxd" secondAttribute="trailing" id="KmU-gG-4OD"/>
+                            <constraint firstItem="RJo-wB-YMA" firstAttribute="top" secondItem="VbT-zH-g0N" secondAttribute="bottom" constant="44" id="Ltb-Cz-Zo1"/>
                             <constraint firstItem="Xbq-K4-shn" firstAttribute="centerX" secondItem="RJo-wB-YMA" secondAttribute="centerX" id="M2f-o3-Jr3"/>
                             <constraint firstItem="0Hr-nq-FL9" firstAttribute="top" secondItem="4Ng-92-HMs" secondAttribute="top" constant="63" id="P7I-x3-m9e"/>
                             <constraint firstItem="Xbq-K4-shn" firstAttribute="leading" secondItem="3Bm-1I-Sxd" secondAttribute="leading" id="Sss-Qo-qoC"/>
@@ -74,10 +82,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTF" destination="3Bm-1I-Sxd" id="ssh-no-Vg6"/>
                         <outlet property="lastnameTF" destination="Xbq-K4-shn" id="LEM-mY-iXS"/>
-                        <outlet property="loginTF" destination="3Bm-1I-Sxd" id="wfO-om-iyd"/>
                         <outlet property="nameTF" destination="0Hr-nq-FL9" id="MZn-Sv-GLu"/>
                         <outlet property="passTF" destination="8IZ-JZ-hFy" id="DSv-9K-65o"/>
+                        <outlet property="phoneTF" destination="OiQ-TL-N2M" id="QNy-fB-SLJ"/>
                         <outlet property="repPassTF" destination="VbT-zH-g0N" id="6jO-lB-7Z8"/>
                         <outlet property="signInButton" destination="RJo-wB-YMA" id="0u7-XG-B79"/>
                     </connections>
